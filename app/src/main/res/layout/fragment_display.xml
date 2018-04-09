@@ -1,0 +1,160 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.princ.inclass08.DisplayFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewSI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/StudentInfo" />
+
+        <TextView
+            android:id="@+id/textViewDName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewSI"
+            android:layout_marginTop="36dp"
+            android:layout_toLeftOf="@+id/textViewSI"
+            android:layout_toStartOf="@+id/textViewSI"
+            android:text="@string/NameD"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewDName"
+            android:layout_toEndOf="@+id/textViewDName"
+            android:layout_toRightOf="@+id/textViewDName"
+            android:layout_toLeftOf="@+id/imageButtonNameEdit"
+            android:layout_toStartOf="@+id/imageButtonNameEdit"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewDEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButtonNameEdit"
+            android:layout_marginTop="12dp"
+            android:layout_toLeftOf="@+id/textViewDName2"
+            android:layout_toStartOf="@+id/textViewDName2"
+            android:text="@string/EmailD"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDEmail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewDName2"
+            android:layout_alignStart="@+id/textViewDName2"
+            android:layout_alignTop="@+id/textViewDEmail"
+            android:layout_toEndOf="@+id/textViewDEmail"
+            android:layout_toRightOf="@+id/textViewDEmail"
+            android:layout_toLeftOf="@+id/imageButtonEmailEdit"
+            android:layout_toStartOf="@+id/imageButtonEmailEdit"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewDDepartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButtonEmailEdit"
+            android:layout_marginTop="13dp"
+            android:layout_toLeftOf="@+id/textViewDEmail2"
+            android:layout_toStartOf="@+id/textViewDEmail2"
+            android:text="@string/DepartmentD"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDDepartment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewDEmail2"
+            android:layout_alignStart="@+id/textViewDEmail2"
+            android:layout_alignTop="@+id/textViewDDepartment"
+            android:layout_toEndOf="@+id/textViewDDepartment"
+            android:layout_toRightOf="@+id/textViewDDepartment"
+            android:layout_toLeftOf="@+id/imageButtonDepEdit"
+            android:layout_toStartOf="@+id/imageButtonDepEdit"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewDMood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageButtonMoodEdit"
+            android:layout_toLeftOf="@+id/textViewDDepartment2"
+            android:layout_toStartOf="@+id/textViewDDepartment2"
+            android:text="@string/MoodD"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDMood2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewDDepartment2"
+            android:layout_alignStart="@+id/textViewDDepartment2"
+            android:layout_alignTop="@+id/textViewDMood"
+            android:layout_toEndOf="@+id/textViewDMood"
+            android:layout_toRightOf="@+id/textViewDMood"
+            android:layout_toLeftOf="@+id/imageButtonMoodEdit"
+            android:layout_toStartOf="@+id/imageButtonMoodEdit"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/imageButtonNameEdit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textViewDName2"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/imageButtonEmailEdit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/textViewDEmail2"
+            android:layout_toEndOf="@+id/textViewDName2"
+            android:layout_toRightOf="@+id/textViewDName2"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/imageButtonDepEdit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_alignLeft="@+id/imageButtonEmailEdit"
+            android:layout_alignStart="@+id/imageButtonEmailEdit"
+            android:layout_alignTop="@+id/textViewDDepartment2"
+            android:src="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/imageButtonMoodEdit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/imageButtonDepEdit"
+            android:layout_alignStart="@+id/imageButtonDepEdit"
+            android:layout_below="@+id/imageButtonDepEdit"
+            android:layout_marginTop="12dp"
+            android:background="@null"
+            android:src="@android:drawable/ic_menu_edit" />
+    </RelativeLayout>
+</FrameLayout>
