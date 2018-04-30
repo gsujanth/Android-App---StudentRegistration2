@@ -1,8 +1,7 @@
 package com.example.princ.inclass08;
 
-/*Assignment# - InClass08
-  Names : Sujanth Babu Guntupalli
-          Mounika Yendluri
+/*
+  Author : Sujanth Babu Guntupalli
 */
 
 import android.app.Fragment;
